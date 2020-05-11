@@ -2,9 +2,11 @@
     position: sticky;
     top: 0;
     box-shadow: rem(0 0 10px 5px rgba(0, 0, 0, 0.1));
+    backdrop-filter: saturate(180%) blur(8px);
+    z-index: 999;
     @include themed() {
-        border-bottom: rem(1px solid t($header-border));
-        background-color: transparentize(t($bg), 0.1);
+        border-bottom: rem(1px solid t($border));
+        background-color: transparentize(t($bg), 0.3);
     }
     &__inner {
         height: $header-height;

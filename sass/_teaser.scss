@@ -1,0 +1,34 @@
+.teaser {
+    $self: &;
+    &__figure {
+        margin-bottom: $spacer--small;
+    }
+    &__title {
+        font-size: rem(20px);
+        margin-bottom: $spacer--smallest;
+    }
+    &__text {
+        font-size: rem(14px);
+    }
+
+    &--portfolio {
+        position: relative;
+        color: rgba(#fff, .85);
+        #{ $self }__figure {
+            margin-bottom: 0; 
+        }
+        #{ $self }__text-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: rem(5px 10px);
+            background-color: rgba(0,0,0,0.2);
+        }
+        #{ $self }__title {
+            font-size: rem(14px);
+            font-style: italic;
+            font-weight: $font-weight--light;
+        }
+    }
+}

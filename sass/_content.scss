@@ -1,4 +1,11 @@
 .content {
-    &__inner {
+    padding: $spacer 0;
+    @include mq($from: desktop) {
+        padding: $spacer--small 0;
+    }
+    &__main {
+        > *:not(:last-child) {
+            margin-bottom: $spacer;
+        }
     }
 }

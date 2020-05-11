@@ -1,0 +1,22 @@
+.featured-list {
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: rem(30px);
+        @include mq($from: tablet) {
+            grid-gap: rem(15px);
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    &__title {
+        font-family: $font-family--title;
+        font-size: rem(20px);
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: $spacer--smallest;
+        margin-bottom: $spacer;
+        @include themed() {
+            border-bottom: rem(1px solid t($border));
+        }
+    }
+}

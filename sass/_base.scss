@@ -48,3 +48,8 @@ select,
 a {
     -webkit-tap-highlight-color: transparent;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}

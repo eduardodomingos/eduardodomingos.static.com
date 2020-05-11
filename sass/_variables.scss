@@ -23,6 +23,14 @@ $hamburger-layer-spacing: rem(6px);
 $hamburger-hover-opacity: 0.7;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity;
 
+//spacers
+$spacer--largest: rem(120px);
+$spacer--large: rem(65px);
+$spacer: rem(24px);
+$spacer--medium: ($spacer * .8);
+$spacer--small: ($spacer / 2);
+$spacer--smallest: ($spacer--small / 3);
+
 // colors
 $ebony-clay: #272b38;
 $limed-spruce: #3e4e53;
@@ -33,19 +41,17 @@ $lightning-yellow: #ffbf11;
 // color theming
 $bg: "bg";
 $text: "text";
-$header-border: "header-border";
+$border: "border";
 
 $themes: (
     default: (
         bg: $desert-storm,
         text: $limed-spruce,
-        header-border: transparentize(#000, 0.9),
-        featured-list-title-border: transparentize(#000, 0.9),
+        border: transparentize(#000, 0.9)
     ),
     dark: (
         bg: $ebony-clay,
         text: $silver-rust,
-        header-border: transparentize(#fff, 0.9),
-        featured-list-title-border: transparentize(#fff, 0.9),
+        border: transparentize(#fff, 0.9)
     ),
 );
