@@ -1,7 +1,7 @@
 html {
     @include rem-baseline;
     -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -26,9 +26,9 @@ body {
 }
 
 a {
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     @include attention() {
-        opacity: .8;
+        opacity: 0.8;
     }
 }
 
@@ -46,5 +46,5 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
