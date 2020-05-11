@@ -1,12 +1,24 @@
 .branding {
     .header & {
+        
         text-transform: uppercase;
         &__logo {
             font-size: rem(18px);
+            transition: font-size .4s ease-in-out;
         }
         &__text {
             font-size: rem(14px);
             font-weight: $font-weight--light;
+            transition: font-size .4s ease-in-out;
+        }
+        .header-is-collapsed & {
+            &__logo {
+                font-size: rem(16px);
+            }
+            &__text {
+                font-size: rem(12px);
+            }
         }
     }
+    
 }

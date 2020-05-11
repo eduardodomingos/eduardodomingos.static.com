@@ -5,4 +5,15 @@
     justify-content: center;
     align-items: center;
     font-size: rem(14px);
+    transition: all .4s ease-in-out;
+    &__text {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .header-is-collapsed & {
+        height: $announcement-height--collapsed;
+        font-size: rem(13px);
+    }
 }

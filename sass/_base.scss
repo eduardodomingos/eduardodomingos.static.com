@@ -12,6 +12,7 @@ body {
 }
 
 .site-container {
+    padding-top: $announcement-height + $header-height;
     @include themed() {
         color: t($text);
         background-color: t($bg);

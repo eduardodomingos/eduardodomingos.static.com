@@ -1,8 +1,14 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     &__inner {
         height: $header-height;
         box-shadow: rem(0 0 10px 5px rgba(0, 0, 0, 0.1));
         backdrop-filter: saturate(180%) blur(8px);
+        transition: height .4s ease-in-out;
         @include themed() {
             border-bottom: rem(1px solid t($border));
             background-color: transparentize(t($bg), 0.3);
@@ -12,6 +18,12 @@
             justify-content: space-between;
             align-items: center;
             height: 100%;
+        }
+    }
+
+    .header-is-collapsed & {
+        &__inner {
+            height: $header-height--colapsed;
         }
     }
 }
