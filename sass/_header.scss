@@ -1,0 +1,15 @@
+.header {
+    position: sticky;
+    top: 0;
+    box-shadow: rem(0 0 10px 5px rgba(0,0,0,0.1));
+    @include themed() {
+        border-bottom: rem(1px solid t($header-border));
+        background-color: transparentize(t($bg), .1);
+    }
+    &__inner {
+        height: $header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,50 @@
+html {
+    @include rem-baseline;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: $font-family;
+    font-size: rem(16px);
+    font-weight: $font-weight--normal;
+    line-height: $line-height--base;
+}
+
+.site-container {
+    @include themed() {
+        color: t($text);
+        background-color: t($bg);
+    }
+}
+
+@include headings() {
+    font-family: $font-family--title;
+    line-height: $line-height--title;
+    font-weight: $font-weight--bold;
+    word-wrap: break-word;
+}
+
+a {
+    transition: opacity .2s;
+    @include attention() {
+        opacity: .8;
+    }
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    @include attention() {
+        outline: 0;
+    }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}

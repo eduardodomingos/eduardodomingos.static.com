@@ -1,0 +1,12 @@
+.branding {
+    .header & {
+        text-transform: uppercase;
+        &__logo {
+            font-size: rem(18px);
+        }
+        &__text {
+            font-size: rem(14px);
+            font-weight: $font-weight--light;
+        }
+    }
+}
