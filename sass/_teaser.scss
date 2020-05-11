@@ -12,6 +12,17 @@
     }
 
     &--portfolio {
+        flex: 0 auto;
+        margin: 0 auto;
+        width: 100%;
+        &:not(:last-child){
+            margin: 0 0 30px;
+        }
+        @include mq($from: tablet) {
+            &:not(:last-child){
+                margin: 0 20px 0 0;
+            }
+        }
         position: relative;
         color: rgba(#fff, .85);
         #{ $self }__figure {
@@ -29,6 +40,12 @@
             font-size: rem(14px);
             font-style: italic;
             font-weight: $font-weight--light;
+        }
+
+        &--3x2 {
+            @include mq($from: tablet) {
+                flex: 1.5 0%;
+            }
         }
     }
 }

@@ -1,1 +1,16 @@
-.offcanvas {}
+.offcanvas {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100vw;
+    right: 0;
+    //transform: translateX(100%);
+    transition: translate .4s ease-in-out;
+    @include themed() {
+        background-color: t($bg);
+    }
+    .offcanvas-is-active & {
+        transform: translateX(0);
+    }
+}

@@ -2,10 +2,20 @@
     &__items {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: rem(30px);
+        grid-gap: rem(15px);
         @include mq($from: tablet) {
-            grid-gap: rem(15px);
             grid-template-columns: repeat(3, 1fr);
+        }
+
+        &--portfolio {
+            display: block;
+            > div {
+                display: flex;
+                flex-flow: row wrap;
+                & + div {
+                    margin-top: rem(15px);
+                }
+            }
         }
     }
     &__title {
@@ -19,4 +29,6 @@
             border-bottom: rem(1px solid t($border));
         }
     }
+
+    
 }
