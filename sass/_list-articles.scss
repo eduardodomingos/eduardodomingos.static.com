@@ -1,8 +1,8 @@
-.featured-list {
+.list-articles {
     &__items {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: rem(15px);
+        grid-gap: rem(30px);
         @include mq($from: tablet) {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -23,8 +23,8 @@
         font-size: rem(20px);
         text-transform: uppercase;
         text-align: center;
-        padding-bottom: $spacer--smallest;
-        margin-bottom: $spacer;
+        padding-bottom: rem(10px);
+        margin-bottom: rem(20px);
         @include themed() {
             border-bottom: rem(1px solid t($border));
         }

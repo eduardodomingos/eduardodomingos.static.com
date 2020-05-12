@@ -1,11 +1,40 @@
 .content {
-    padding: $spacer 0;
-    @include mq($from: desktop) {
-        padding: $spacer--small 0;
-    }
+    $self: &;
+    padding: rem(30px 0);
     &__main {
         > *:not(:last-child) {
-            margin-bottom: $spacer;
+            margin-bottom: rem(40px);
         }
     }
+
+    &__inner {
+        .page-template--sidebar & {
+            display: grid;
+            grid-template-areas:
+            'main'
+            'sidebar';
+            grid-gap: rem(30px);
+            grid-template-columns: minmax(0, 1fr);
+            @include mq($from: desktop) {
+                grid-template-columns: $main-width $sidebar-width;
+                grid-template-areas: 'main sidebar';
+            }
+
+            #{ $self }__main {
+                grid-area: main;
+            }
+            #{ $self }__sidebar {
+                grid-area: sidebar;
+            }
+        }
+    }
+
+
+
+    
+
+    // &__main {
+    //     .page-template--sidebar {}
+    // }
+    // &__sidebar {}
 }

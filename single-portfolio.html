@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-template-default theme">
+    <script type="text/javascript">
+        if (localStorage.getItem('theme')) {
+            document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
+        }
+        else {
+            document.body.classList.add('theme--light')
+        }
+    </script>
+    <div class="site-container">
+        <header id="masthead" class="header">
+            <div class="announcement">
+                <a href="#" class="announcement__text">FREE eBook available!!!</a>
+            </div>
+            <div class="header__inner">
+                <div class="container">
+                    <div class="branding">
+                        <h1 class="branding__logo"><a href="/">Eduardo <span>Domingos</span></a></h1>
+                        <p class="branding__text">Landscape Photography</p>
+                    </div>
+                    <div class="header__inner__stuff">
+                        <nav class="menu">
+                            <ul>
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href="portfolio.html">Portfolio</a>
+                                    <ul>
+                                        <li><a href="portfolio/portugal.html">Portugal</a></li>
+                                        <li><a href="portfolio/portugal.html">Spain</a></li>
+                                        <li><a href="portfolio/portugal.html">USA</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+                        <div class="theme-toggle">
+                            <i class="theme-toggle__icon fas fa-sun"></i>
+                            <button class="theme-toggle__button">
+                                <div>
+                                    <span class="theme-toggle__switch"></span>
+                                </div>
+                            </button>
+                            <i class="theme-toggle__icon fas fa-moon"></i>
+                        </div>
+                        <button class="offcanvas-toggle hamburger hamburger--spin-r" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="article article--portfolio">
+            <figure class="article__featured-img article__featured-img--landscape">
+                <img src="img/portfolio/featured-img-l.jpg" alt="">
+            </figure>
+            <div class="article__text">
+                <ul class="breadcrumb">
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Portugal</a></li>
+                </ul>
+                <h1 class="article__title">An Ancient City</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Dictum non
+                    consectetur
+                    a erat nam at lectus. Sed vulputate mi sit amet mauris. Scelerisque varius morbi enim nunc. Amet
+                    mattis
+                    vulputate enim nulla aliquet. Eros in cursus turpis massa tincidunt dui ut ornare. Adipiscing at in
+                    tellus integer feugiat. Amet aliquam id diam maecenas ultricies mi eget. Tellus elementum sagittis
+                    vitae
+                    et leo duis. Nisl nunc mi ipsum faucibus vitae aliquet. A lacus vestibulum sed arcu. Purus viverra
+                    accumsan in nisl nisi. Auctor urna nunc id cursus. Mauris rhoncus aenean vel elit scelerisque mauris
+                    pellentesque pulvinar pellentesque. Dolor sit amet consectetur adipiscing.</p>
+                <p>
+                    Eu mi bibendum neque egestas congue quisque egestas diam. Purus non enim praesent elementum
+                    facilisis
+                    leo. Sit amet facilisis magna etiam tempor. Senectus et netus et malesuada fames ac turpis. Nisi
+                    porta
+                    lorem mollis aliquam ut porttitor. Sem et tortor consequat id porta. Tellus pellentesque eu
+                    tincidunt
+                    tortor aliquam nulla facilisi cras fermentum. Id faucibus nisl tincidunt eget nullam non nisi est
+                    sit.
+                    Lorem sed risus ultricies tristique nulla. Amet cursus sit amet dictum. Vel quam elementum pulvinar
+                    etiam non quam. Posuere morbi leo urna molestie. Faucibus ornare suspendisse sed nisi lacus. Velit
+                    aliquet sagittis id consectetur purus. Tellus elementum sagittis vitae et leo duis ut diam quam.
+                    Dictum
+                    fusce ut placerat orci nulla pellentesque dignissim enim sit. Leo urna molestie at elementum eu
+                    facilisis sed odio. Accumsan in nisl nisi scelerisque eu ultrices.</p>
+                <p>
+
+                    Scelerisque in dictum non consectetur. Aliquam faucibus purus in massa tempor nec feugiat. At lectus
+                    urna duis convallis convallis tellus id interdum velit. Dictum fusce ut placerat orci nulla. Augue
+                    ut
+                    lectus arcu bibendum at varius. Sodales neque sodales ut etiam sit amet. Elementum sagittis vitae et
+                    leo
+                    duis ut diam quam. Vitae turpis massa sed elementum tempus egestas sed sed risus. Suspendisse
+                    potenti
+                    nullam ac tortor vitae purus faucibus ornare. Integer enim neque volutpat ac tincidunt vitae semper.
+                    Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Aenean pharetra magna ac
+                    placerat
+                    vestibulum lectus.</p>
+                <p>Faucibus turpis in eu mi bibendum. Sapien faucibus et molestie ac. Aliquam etiam erat velit
+                    scelerisque
+                    in dictum non consectetur a. Eleifend mi in nulla posuere sollicitudin aliquam. Massa sed elementum
+                    tempus egestas sed sed risus. Egestas sed tempus urna et pharetra. Amet venenatis urna cursus eget
+                    nunc
+                    scelerisque viverra. Gravida dictum fusce ut placerat orci nulla. Aenean sed adipiscing diam donec
+                    adipiscing tristique risus. A diam sollicitudin tempor id eu nisl nunc. Vitae turpis massa sed
+                    elementum
+                    tempus egestas sed sed. Morbi leo urna molestie at elementum eu. Egestas dui id ornare arcu odio ut
+                    sem
+                    nulla pharetra. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Quis vel eros donec
+                    ac.
+                    Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Condimentum mattis pellentesque id
+                    nibh tortor. Vitae semper quis lectus nulla. Sit amet porttitor eget dolor morbi.</p>
+                <p>
+                    Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Sit amet dictum sit amet justo donec
+                    enim diam vulputate. Sed odio morbi quis commodo odio. Ligula ullamcorper malesuada proin libero
+                    nunc.
+                    Tellus elementum sagittis vitae et leo duis ut diam quam. Cras ornare arcu dui vivamus arcu felis
+                    bibendum ut tristique. Sed elementum tempus egestas sed. Risus quis varius quam quisque. Enim
+                    praesent
+                    elementum facilisis leo vel fringilla est. Magna fermentum iaculis eu non diam phasellus. Eu
+                    volutpat
+                    odio facilisis mauris sit amet. Scelerisque eu ultrices vitae auctor eu augue ut lectus arcu. Vitae
+                    sapien pellentesque habitant morbi tristique senectus et netus et. Mauris nunc congue nisi vitae.
+                    Volutpat consequat mauris nunc congue nisi vitae suscipit. Placerat duis ultricies lacus sed turpis
+                    tincidunt id aliquet. Laoreet suspendisse interdum consectetur libero id. Dignissim convallis aenean
+                    et
+                    tortor at risus. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum.</p>
+            </div>
+            <div class="article__footer container">
+                <div class="list-articles">
+                    <h2 class="list-articles__title">More from Portugal</h2>
+                    <div class="list-articles__items list-articles__items--portfolio">
+                        <div>
+                            <article class="teaser teaser--portfolio teaser--portfolio--3x2">
+                                <figure class="teaser__figure">
+                                    <a href="single-portfolio.html"><img class="teaser__img" src="img/portfolio/img-4-3x2.jpg" alt=""></a>
+                                </figure>
+                                <div class="teaser__text-details">
+                                    <h1 class="teaser__title"><a href="single-portfolio.html">Purifying my soul</a></h1>
+                                </div>
+                            </article>
+                            <article class="teaser teaser--portfolio teaser--portfolio--2x3">
+                                <figure class="teaser__figure">
+                                    <a href="single-portfolio.html"><img class="teaser__img" src="img/portfolio/img-6-2x3.jpg" alt=""></a>
+                                </figure>
+                                <div class="teaser__text-details">
+                                    <h1 class="teaser__title"><a href="single-portfolio.html">Purifying my soul</a></h1>
+                                </div>
+                            </article>
+                            <article class="teaser teaser--portfolio teaser--portfolio--3x2">
+                                <figure class="teaser__figure">
+                                    <a href="single-portfolio.html"><img class="teaser__img" src="img/portfolio/img-5-3x2.jpg" alt=""></a>
+                                </figure>
+                                <div class="teaser__text-details">
+                                    <h1 class="teaser__title"><a href="single-portfolio.html">A cold wind of change</a></h1>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <ul class="social">
+                    <li class="social__item"><a href="#" class="social__link"><i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="fab fa-instagram"></i>
+                            <span>Instagram</span></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="fab fa-youtube"></i>
+                            <span>Youtube</span></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="fab fa-500px"></i>
+                            <span>500px</span></a></li>
+                </ul>
+                <p class="footer__text">&copy; 2020 Eduardo Domingos. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <div class="offcanvas">
+            <div class="container">
+                <div class="theme-toggle">
+                    <i class="theme-toggle__icon fas fa-sun"></i>
+                    <button class="theme-toggle__button">
+                        <div>
+                            <span class="theme-toggle__switch"></span>
+                        </div>
+                    </button>
+                    <i class="theme-toggle__icon fas fa-moon"></i>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                            <ul>
+                                <li><a href="portfolio/portugal.html">Portugal</a></li>
+                                <li><a href="portfolio/portugal.html">Spain</a></li>
+                                <li><a href="portfolio/portugal.html">USA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -2,6 +2,8 @@
     $self: &;
     &__figure {
         margin-bottom: $spacer--small;
+        overflow: hidden;
+        border-radius: rem(2px);
     }
     &__title {
         font-size: rem(20px);
@@ -45,6 +47,11 @@
         &--3x2 {
             @include mq($from: tablet) {
                 flex: 1.5 0%;
+            }
+        }
+        &--2x3 {
+            @include mq($from: tablet) {
+                flex: .666667 0%;
             }
         }
     }

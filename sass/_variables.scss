@@ -24,6 +24,9 @@ $hamburger-layer-height: rem(1px);
 $hamburger-layer-spacing: rem(6px);
 $hamburger-hover-opacity: 0.7;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity;
+$main-width: minmax(0, 2fr);
+$sidebar-width: minmax(0, 1fr);
+$article-portfolio-max-width: rem(800px);
 
 //spacers
 $spacer--largest: rem(120px);
@@ -34,26 +37,34 @@ $spacer--small: ($spacer / 2);
 $spacer--smallest: ($spacer--small / 3);
 
 // colors
+$mine-shaft: #222222;
 $ebony-clay: #272b38;
+$cod-gray: #111111;
 $limed-spruce: #3e4e53;
 $desert-storm: #f5f4f3;
-$silver-rust: #cac3bc;
+$mercury: #e4e4e4;
 $lightning-yellow: #ffbf11;
 
 // color theming
 $bg: "bg";
 $text: "text";
 $border: "border";
+$bg-footer: "bg-footer";
+$bg-theme-toggle-switch: "bg-theme-toggle-switch";
 
 $themes: (
-    default: (
+    light: (
         bg: $desert-storm,
         text: $limed-spruce,
-        border: transparentize(#000, 0.9)
+        border: transparentize(#000, 0.9),
+        bg-footer: lighten($cod-gray, 3%),
+        bg-theme-toggle-switch: #fff,
     ),
     dark: (
-        bg: $ebony-clay,
-        text: $silver-rust,
-        border: transparentize(#fff, 0.9)
+        bg: $cod-gray,
+        text: $mercury,
+        border: transparentize(#fff, 0.9),
+        bg-footer: darken($cod-gray, 3%),
+        bg-theme-toggle-switch: #454545,
     ),
 );

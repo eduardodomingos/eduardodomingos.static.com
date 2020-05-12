@@ -1,0 +1,47 @@
+.article {
+    font-size: rem(14px);
+    $self: &;
+    margin-bottom: rem(70px);
+    &__featured-img{
+        margin-bottom: rem(30px);
+        #{ $self }--portfolio & {
+            background-color: $mine-shaft;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mq($from: tablet) {
+                padding: rem(20px);
+            }
+            &--portrait {
+                img {
+                    max-height: 600px;
+                }
+            }
+
+            &--landscape {
+                img {
+                    width: 100%;
+                    max-width: $article-portfolio-max-width;
+                }
+            }
+        }
+    }
+    &__text {
+        margin-bottom: rem(60px);
+        > *:not(:last-child) {
+            margin-bottom: rem(22px);
+        }
+        #{ $self }--portfolio & {
+            @include center-block;
+            max-width: $article-portfolio-max-width;
+            padding: rem(0 15px);
+            @include mq($from: tablet) {
+                padding: rem(0 40px);
+            }
+        }
+    }
+
+    &__title {
+        font-size: rem(30px);
+    }
+}

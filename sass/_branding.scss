@@ -3,11 +3,11 @@
         
         text-transform: uppercase;
         &__logo {
-            font-size: rem(18px);
+            font-size: rem(17px);
             transition: font-size .4s ease-in-out;
         }
         &__text {
-            font-size: rem(14px);
+            font-size: rem(12px);
             font-weight: $font-weight--light;
             transition: font-size .4s ease-in-out;
         }

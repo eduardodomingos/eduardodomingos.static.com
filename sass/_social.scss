@@ -1,0 +1,25 @@
+.social {
+    .footer & {
+        display: flex;
+        &__item {
+            &:not(:last-child) {
+                margin-right: rem(8px);
+            }
+        }
+        &__link {
+            font-size: rem(14px);
+            @include themed() {
+                background-color: lighten(t($bg-footer), 10%);
+            }
+        }
+    }
+    &__link {
+        @include circle(rem(35px));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            @extend %screen-reader-text;
+        }
+    }
+}
