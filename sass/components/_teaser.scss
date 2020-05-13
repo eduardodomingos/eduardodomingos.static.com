@@ -1,6 +1,72 @@
 .teaser {
-    &__figure {}
-    &__text-details {}
-    &__title {}
-    &__text {}
+    $self: &;
+    &__figure {
+        margin-bottom: $spacing-unit--small;
+        overflow: hidden;
+        border-radius: $border-radius;
+    }
+    &__title {
+        font-size: rem(20px);
+        margin-bottom: $spacing-unit--small;
+    }
+
+    &--portfolio {
+        flex: 0 auto;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        color: rgba($desert-storm,.85);
+        &:not(:last-child){
+            margin: 0 0 $spacing-unit;
+        }
+        @include mq($from: tablet) {
+            &:not(:last-child){
+                margin: 0 $spacing-unit 0 0;
+            }
+        }
+        #{ $self }__figure {
+            margin-bottom: 0; 
+        }
+        #{ $self }__text-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba($cod-gray, .2);
+            padding: rem($spacing-unit--tiny $spacing-unit--small);
+        }
+        #{ $self }__title {
+            font-style: italic;
+            font-size: inherit;
+            font-weight: $font-weight--light;
+            margin-bottom: 0;
+        }
+
+        // register all possible portfolio teaser ratios
+        &--3x2 {
+            @include mq($from: tablet) {
+                flex: 1.5 0%;
+            }
+        }
+        &--2x3 {
+            @include mq($from: tablet) {
+                flex: .666667 0%;
+            }
+        }
+        &--8x10 {
+            @include mq($from: tablet) {
+                flex: .8 0%;
+            }
+        }
+        &--16x9 {
+            @include mq($from: tablet) {
+                flex: 1.777778 0%;
+            }
+        }
+        &--1x1 {
+            @include mq($from: tablet) {
+                flex: 1 0%;
+            }
+        }
+    }
 }

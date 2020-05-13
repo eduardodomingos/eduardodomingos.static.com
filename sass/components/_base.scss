@@ -32,7 +32,7 @@ body {
 # Links, Buttons and Form Inputs
 --------------------------------------------------------------*/
 a {
-    transition: opacity 0.2s;
+    transition: opacity 0.2s linear;
     @include attention() {
         opacity: 0.8;
     }

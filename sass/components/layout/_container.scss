@@ -1,3 +1,7 @@
-.container {}
+.container {
+    @include center-block;
+    max-width: $container-width;
+    padding: rem(0 $spacing-unit--small);
+}
 
 .container-portfolio {}

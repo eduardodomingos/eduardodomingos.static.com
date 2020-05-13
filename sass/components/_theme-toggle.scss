@@ -1,4 +1,7 @@
 .theme-toggle {
+    .page__head & {
+        display: none;
+    }
     &__button {}
     &__switch {}
     &__icon {}

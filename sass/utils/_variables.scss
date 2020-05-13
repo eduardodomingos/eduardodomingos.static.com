@@ -19,6 +19,10 @@ $spacing-unit--huge: $baseline * $spacing-unit-factor-huge;
 $cod-gray: #111111;
 $desert-storm: #f5f4f3;
 $lightning-yellow: #ffbf11;
+$facebook: #4267b2;
+$twitter: #32aadc;
+$instagram: #8a3ab9;
+$whatsapp: #25D366;
 
 /*--------------------------------------------------------------
 # Text
@@ -54,3 +58,9 @@ $hamburger-layer-height: rem(1px);
 $hamburger-layer-spacing: rem(6px);
 $hamburger-hover-opacity: 0.7;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+$transition: .4s ease-in-out;
+$border-radius: rem(2px);

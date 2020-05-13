@@ -2,17 +2,20 @@
 $bg: "bg";
 $text: "text";
 $border: "border";
+$bg-page-foot: "bg-page-foot";
 
 // Themes
 $themes: (
     light: (
         bg: $desert-storm,
         text: $cod-gray,
-        border: rgba($cod-gray, .4),
+        border: rgba($cod-gray, .1),
+        bg-page-foot: lighten($cod-gray, 5%),
     ),
     dark: (
         bg: $cod-gray,
         text: $desert-storm,
         border: rgba($desert-storm, .4),
+        bg-page-foot: darken($cod-gray, 5%),
     ),
 );

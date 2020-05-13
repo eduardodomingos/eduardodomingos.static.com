@@ -1,6 +1,30 @@
 .list-articles {
-    &__title {}
+    &__title {
+        font-family: $font-family--title;
+        font-size: rem(17px);
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: rem($spacing-unit--small);
+        margin-bottom: rem($spacing-unit);
+        @include themed() {
+            border-bottom: rem(1px solid t($border));
+        }
+    }
     &__list {
-        &--portfolio {}
+        display: grid;
+        grid-gap: rem($spacing-unit);
+        @include mq($from: tablet) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &--portfolio {
+            display: block;
+            > * {
+                display: flex;
+                flex-flow: row wrap;
+                & + * {
+                    margin-top: rem($spacing-unit);
+                }
+            }
+        }
     }
 }

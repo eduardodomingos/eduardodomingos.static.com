@@ -1,5 +1,18 @@
 .announcement {
     background-color: $lightning-yellow;
+    height: $announcement-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all $transition;
+    color: $desert-storm;
+
     &__text {
+        display: block;
+        max-width: 100vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: rem(0 $spacing-unit--small);
     }
 }

@@ -1,4 +1,35 @@
 .socials {
-    &__item {}
-    &__link {}
+    display: flex;
+    .page__foot & {
+        margin-bottom: $spacing-unit;
+        justify-content: center;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: rem($spacing-unit--tiny);
+        }
+    }
+    &__link {
+        display: inline-block;
+        @include circle(rem(40px));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lighten($cod-gray, 20%);
+        &--facebook {
+            background-color: $facebook;
+        }
+        &--twitter{
+            background-color: $twitter;
+        }
+        &--instagram{
+            background-color: $instagram;
+        }
+        &--whatsapp{
+            background-color: $whatsapp;
+        }
+        .page__foot & {
+            background-color: lighten($cod-gray, 20%);
+        }
+    }
 }
