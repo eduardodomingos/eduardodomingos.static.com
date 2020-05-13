@@ -1,0 +1,56 @@
+/*--------------------------------------------------------------
+# Spacing
+--------------------------------------------------------------*/
+$baseline: 6px;
+$spacing-unit-factor-tiny: 1; // 6px
+$spacing-unit-factor-small: 2; // 12px
+$spacing-unit-factor: 4; // 24px
+$spacing-unit-factor-large: 8; // 48px
+$spacing-unit-factor-huge: 16; // 96px
+$spacing-unit: $baseline * $spacing-unit-factor;
+$spacing-unit--tiny: $baseline * $spacing-unit-factor-tiny;
+$spacing-unit--small: $baseline * $spacing-unit-factor-small;
+$spacing-unit--large: $baseline * $spacing-unit-factor-large;
+$spacing-unit--huge: $baseline * $spacing-unit-factor-huge;
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+$cod-gray: #111111;
+$desert-storm: #f5f4f3;
+$lightning-yellow: #ffbf11;
+
+/*--------------------------------------------------------------
+# Text
+--------------------------------------------------------------*/
+$font-family: "Roboto", sans-serif;
+$font-family--title: $font-family;
+$font-size: 14px;
+$line-height: 1.5;
+$line-height--title: 1.2;
+$font-weight--light: 300;
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+$container-width: rem(540px);
+$container-width--tablet: rem(720px);
+$container-width--desktop: rem(990px);
+$portoflio-container-width: rem(800px);
+
+/*--------------------------------------------------------------
+# Element Sizes
+--------------------------------------------------------------*/
+$announcement-height: rem(40px);
+$announcement-height--collapsed: rem(30px);
+$header-height: rem(70px);
+$header-height--colapsed: rem(55px);
+$hamburger-padding-x: rem(15px);
+$hamburger-padding-y: rem(15px);
+$hamburger-layer-width: rem(30px);
+$hamburger-layer-height: rem(1px);
+$hamburger-layer-spacing: rem(6px);
+$hamburger-hover-opacity: 0.7;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;

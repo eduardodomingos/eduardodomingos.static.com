@@ -1,51 +1,27 @@
-// @import "../node_modules/sass-mq/mq";
-// @import "utils/mixins";
-// @import "variables/variables";
-// @import "../node_modules/sass-rem/rem";
-// @import "utils/reset";
-// @import "utils/hamburgers/hamburgers";
-// @import "layout/layout";
-// @import "components/components";
 $rem-baseline: 10px;
 @import "../node_modules/sass-rem/rem";
 @import "../node_modules/sass-mq/mq";
 
-@import "normalize";
-@import "reset";
+@import "reset/normalize";
+@import "reset/reset";
 
-@import "mixins";
-@import "variables";
+@import "utils/mixins";
+@import "utils/variables";
+@import "utils/color-themes";
 
-@import "container";
-@import "base";
-@import "header";
-@import "content";
-@import "footer";
+@import "components/layout/container";
 
-@import "announcement";
-@import "theme-toggle";
-@import "menu";
-@import "branding";
-@import "hamburger";
-@import "hero";
-@import "social";
-@import "list-articles";
-@import "teaser";
-@import "offcanvas";
-@import "article";
-@import "breadcrumb";
-
-
-
-
-// @import "normalize";
-// @import "reset";
-// @import "header";
-// @import "nav";
-// @import "hero";
-// @import "content";
-// @import "list-articles";
-// @import "teaser";
-// @import "social";
-// @import "footer";
-// @import "offcanvas";
+@import "components/base";
+@import "components/page";
+@import "components/announcement";
+@import "components/branding";
+@import "components/main-nav";
+@import "components/theme-toggle";
+@import "components/offcanvas-toggle";
+@import "components/hamburger";
+@import "components/list-articles";
+@import "components/teaser";
+@import "components/article";
+@import "components/socials";
+@import "components/breadcrumb";
+@import "components/offcanvas";

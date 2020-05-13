@@ -1,0 +1,17 @@
+.page {
+    &__wrapper {
+        padding-top: $announcement-height + $header-height;
+        @include themed() {
+            color: t($text);
+            background-color: t($bg);
+        }
+    }
+    &__head {
+    }
+    &__body {
+    }
+    &__featured-img {
+    }
+    &__foot {
+    }
+}

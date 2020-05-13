@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Root
+--------------------------------------------------------------*/
+html {
+    @include rem-baseline;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: $font-family;
+    font-size: rem($font-size);
+    font-weight: $font-weight--normal;
+    line-height: $line-height;
+    background-color: $cod-gray;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+/*--------------------------------------------------------------
+# Text
+--------------------------------------------------------------*/
+@include headings() {
+    font-family: $font-family--title;
+    line-height: $line-height--title;
+    font-weight: $font-weight--bold;
+    word-wrap: break-word;
+}
+
+/*--------------------------------------------------------------
+# Links, Buttons and Form Inputs
+--------------------------------------------------------------*/
+a {
+    transition: opacity 0.2s;
+    @include attention() {
+        opacity: 0.8;
+    }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    @include attention() {
+        outline: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

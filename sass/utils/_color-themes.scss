@@ -1,0 +1,18 @@
+// Shortcuts
+$bg: "bg";
+$text: "text";
+$border: "border";
+
+// Themes
+$themes: (
+    light: (
+        bg: $desert-storm,
+        text: $cod-gray,
+        border: rgba($cod-gray, .4),
+    ),
+    dark: (
+        bg: $cod-gray,
+        text: $desert-storm,
+        border: rgba($desert-storm, .4),
+    ),
+);
