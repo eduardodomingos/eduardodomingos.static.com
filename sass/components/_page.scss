@@ -27,9 +27,17 @@
         }
     }
     &__body {
+        padding-top: $spacing-unit;
         margin-bottom: $spacing-unit--large;
+        &__content {
+            display: grid;
+            > * > *:not(:last-child) {
+                margin-bottom: $spacing-unit;
+            }
+        }
     }
     &__featured-img {
+        margin-top: -$spacing-unit;
         margin-bottom: rem($spacing-unit);
     }
     &__foot {
