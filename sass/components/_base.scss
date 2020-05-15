@@ -13,7 +13,7 @@ body {
     font-weight: $font-weight--normal;
     line-height: $line-height;
     background-color: $cod-gray;
-    &.no-scroll{
+    &.no-overflow{
         overflow: hidden;
     }
 }

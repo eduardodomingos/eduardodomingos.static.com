@@ -7,11 +7,11 @@ $spacing-unit-factor-small: 2; // 12px
 $spacing-unit-factor: 4; // 24px
 $spacing-unit-factor-large: 8; // 48px
 $spacing-unit-factor-huge: 16; // 96px
-$spacing-unit: $baseline * $spacing-unit-factor;
-$spacing-unit--tiny: $baseline * $spacing-unit-factor-tiny;
-$spacing-unit--small: $baseline * $spacing-unit-factor-small;
-$spacing-unit--large: $baseline * $spacing-unit-factor-large;
-$spacing-unit--huge: $baseline * $spacing-unit-factor-huge;
+$spacing-unit: rem($baseline * $spacing-unit-factor);
+$spacing-unit--tiny: rem($baseline * $spacing-unit-factor-tiny);
+$spacing-unit--small: rem($baseline * $spacing-unit-factor-small);
+$spacing-unit--large: rem($baseline * $spacing-unit-factor-large);
+$spacing-unit--huge: rem($baseline * $spacing-unit-factor-huge);
 
 /*--------------------------------------------------------------
 # Colors
@@ -50,7 +50,7 @@ $portoflio-container-width: rem(800px);
 $announcement-height: rem(40px);
 $announcement-height--collapsed: rem(30px);
 $header-height: rem(70px);
-$header-height--colapsed: rem(55px);
+$header-height--collapsed: rem(55px);
 $hamburger-padding-x: rem(15px);
 $hamburger-padding-y: rem(15px);
 $hamburger-layer-width: rem(30px);

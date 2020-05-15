@@ -2,6 +2,14 @@
     @include center-block;
     max-width: $container-width;
     padding: rem(0 $spacing-unit--small);
+    @include mq($from: tablet) {
+        max-width: $container-width--tablet;
+        padding: 0;
+    }
+    @include mq($from: desktop) {
+        max-width: $container-width--desktop;
+    }
+
 }
 
 .container-portfolio {}

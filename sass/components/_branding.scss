@@ -1,19 +1,23 @@
 .branding {
     text-transform: uppercase;
-    transition: font-size $transition;
     .page__head & {
         &__logo {
+            transition: font-size $transition;
             font-size: rem(17px);
-            .page__head-is-collapsed & {
-                font-size: rem(16px);
-            }
         }
         &__text {
             font-size: rem(12px);
             font-weight: $font-weight--light;
-            .page__head-is-collapsed & {
-                font-size: rem(12px);
-            }
+            transition: font-size $transition;
+        }
+    }
+
+    .head-collapsed & {
+        &__logo {
+            font-size: rem(16px);
+        }
+        &__text {
+            font-size: rem(11px);
         }
     }
 }

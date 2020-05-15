@@ -15,4 +15,9 @@
         text-overflow: ellipsis;
         padding: rem(0 $spacing-unit--small);
     }
+
+    .head-collapsed & {
+        font-size: rem(13px);
+        height: $announcement-height--collapsed;
+    }
 }

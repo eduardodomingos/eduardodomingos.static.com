@@ -1,8 +1,39 @@
 .theme-toggle {
+    display: flex;
+    align-items: center;
     .page__head & {
         display: none;
     }
-    &__button {}
-    &__switch {}
-    &__icon {}
+    &__button {
+        padding: rem(0 5px);
+        > div {
+            width: rem(37px);
+            height: rem(18px);
+            border-radius: 15px;
+            position: relative;
+            background-color: lighten($cod-gray, 50%);
+        }
+    }
+    &__switch {
+        @include circle(rem(16px));
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        transition: all .2s ease-out;
+        background-color: $desert-storm;
+        .theme--dark & {
+            left: calc( 100% - 17px);
+        }
+    }
+    &__icon {
+        font-size: rem(11px);
+        &.fa-sun {
+            color: $lightning-yellow;
+        }
+    }
+
+    .page__offcanvas & {
+        justify-content: flex-end;
+        margin-bottom: $spacing-unit--small;
+    }
 }

@@ -2,4 +2,23 @@
     .page__head & {
         display: none;
     }
+    .page__offcanvas & {
+        text-transform: uppercase;
+        a {
+            display: block;
+            padding: ($spacing-unit--tiny + $spacing-unit--tiny / 2) 0;
+            @include themed() {
+                border-bottom: rem(1px solid t($border));
+            }
+        }
+
+        > ul {
+            @include themed() {
+                border-top: rem(1px solid t($border));
+            }
+            ul {
+                margin-left: $spacing-unit + $spacing-unit--tiny;
+            }
+        }
+    }
 }
