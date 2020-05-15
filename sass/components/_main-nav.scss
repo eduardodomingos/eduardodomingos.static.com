@@ -1,9 +1,62 @@
 .main-nav {
+    li.active {
+        font-weight: $font-weight--bold;
+    }
+
     .page__head & {
         display: none;
+        @include mq($from: desktop) {
+            display: block;
+            margin-right: $spacing-unit;
+            > ul {
+                display: flex;
+                ul {
+                    text-align: center;
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    box-shadow: rem(1px 1px 15px rgba(0, 0, 0, 0.3));
+                    border-radius: $border-radius;
+                    @include themed() {
+                        background-color: rgba(t($bg-submenu), .95);
+                    }
+                    li:not(:last-child) a {
+                        @include themed() {
+                            border-bottom: rem(1px solid t($border));
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: -$spacing-unit--tiny;
+                        left: 50%;
+                        @include size(0, 0);
+                        transform: translateX(-50%) rotate(180deg);
+                        z-index: 1;
+                        border-left: solid $spacing-unit--tiny transparent; /* Creates triangle effect */
+                        border-right: solid $spacing-unit--tiny transparent; /* Creates triangle effect */
+                        @include themed() {
+                            border-top: solid $spacing-unit--tiny rgba(t($bg-submenu), .95); /* Creates the notch */
+                        }
+                    }
+                }
+                a {
+                    display: block;
+                    padding: $spacing-unit--small;
+                }
+
+                li.menu-item-has-children {
+                    position: relative;
+                    @include attention() {
+                        > ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
     .page__offcanvas & {
-        text-transform: uppercase;
         a {
             display: block;
             padding: ($spacing-unit--tiny + $spacing-unit--tiny / 2) 0;

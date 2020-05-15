@@ -3,6 +3,9 @@
     align-items: center;
     .page__head & {
         display: none;
+        @include mq($from: desktop) {
+            display: flex;
+        }
     }
     &__button {
         padding: rem(0 5px);

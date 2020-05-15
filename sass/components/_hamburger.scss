@@ -35,6 +35,10 @@
             }
         }
     }
+
+    @include mq($from: desktop) {
+        display: none;
+    }
 }
 
 .hamburger-box {

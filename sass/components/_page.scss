@@ -16,7 +16,7 @@
         backdrop-filter: saturate(180%) blur(8px);
         @include themed() {
             border-bottom: rem(1px solid t($border));
-            background-color: rgba(t($bg), .8);
+            background-color: rgba(t($bg), .9);
         }
         > .container {
             display: flex;
@@ -33,6 +33,11 @@
         .offcanvas-open & {
             @include themed() {
                 background-color: t($bg);
+            }
+        }
+        &__right {
+            @include mq($from: desktop) {
+                display: flex;
             }
         }
     }
@@ -76,6 +81,9 @@
         transition: transform $transition;
         @include themed() {
             background-color: t($bg);
+        }
+        @include mq($from: desktop) {
+            display: none;
         }
         > .container {
             padding-top: $spacing-unit--small;
