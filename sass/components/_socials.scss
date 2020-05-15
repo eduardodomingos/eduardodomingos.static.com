@@ -6,7 +6,7 @@
     }
     &__item {
         &:not(:last-child) {
-            margin-right: rem($spacing-unit--tiny);
+            margin-right: $spacing-unit--tiny;
         }
     }
     &__link {

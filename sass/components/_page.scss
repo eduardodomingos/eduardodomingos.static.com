@@ -43,12 +43,18 @@
             display: grid;
             > * > *:not(:last-child) {
                 margin-bottom: $spacing-unit;
+                @include mq($from: tablet) {
+                    margin-bottom: $spacing-unit--large;
+                }
             }
         }
     }
     &__featured-img {
         margin-top: -$spacing-unit;
-        margin-bottom: rem($spacing-unit);
+        margin-bottom: $spacing-unit;
+        @include mq($from: tablet) {
+            margin-bottom: $spacing-unit--large;
+        }
     }
     &__foot {
         font-size: rem(13px);
@@ -66,11 +72,14 @@
         right: 0;
         height: calc(100vh - #{($announcement-height + $header-height)});
         width: 100vw;
-        padding: $spacing-unit--small;
         transform: translateX(100%);
         transition: transform $transition;
         @include themed() {
             background-color: t($bg);
+        }
+        > .container {
+            padding-top: $spacing-unit--small;
+            padding-bottom: $spacing-unit--small;
         }
         .offcanvas-open & {
             transform: translateX(0);

@@ -33,7 +33,7 @@
             left: 0;
             width: 100%;
             background-color: rgba($cod-gray, .2);
-            padding: rem($spacing-unit--tiny $spacing-unit--small);
+            padding: $spacing-unit--tiny $spacing-unit--small;
         }
         #{ $self }__title {
             font-style: italic;
