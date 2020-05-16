@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page theme">
+    <script type="text/javascript">
+        if (localStorage.getItem('theme')) {
+            document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
+        }
+        else {
+            document.body.classList.add('theme--light')
+        }
+    </script>
+    <div class="page__wrapper">
+        <header class="page__head">
+            <div class="announcement">
+                <a href="#" class="announcement__text">FREE eBook available!!!</a>
+            </div>
+            <div class="container">
+                <div class="branding">
+                    <h1 class="branding__logo"><a href="/">Eduardo <span>Domingos</span></a></h1>
+                    <p class="branding__text">Landscape Photography</p>
+                </div>
+                <div class="page__head__right">
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="category-portfolio.html">Portfolio</a>
+                                <ul>
+                                    <li><a href="portfolio-single.html">Portugal</a></li>
+                                    <li><a href="portfolio-single.html">Spain</a></li>
+                                    <li><a href="portfolio-single.html">USA</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="theme-toggle">
+                        <i class="theme-toggle__icon fas fa-sun"></i>
+                        <button class="theme-toggle__button">
+                            <div>
+                                <span class="theme-toggle__switch"></span>
+                            </div>
+                        </button>
+                        <i class="theme-toggle__icon fas fa-moon"></i>
+                    </div>
+                    <button class="hamburger hamburger--spin-r" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="page__body">
+            <div class="page__body__content">
+                <div class="page__body__main-content">
+                    <article class="article article--portfolio">
+                        <div class="article__head">
+                            <figure class="article__featured-img">
+                                <img class="article__featured-img__img article__featured-img__img--portrait" src="img/portfolio/img-7-2x3.jpg" alt="">
+                            </figure>
+                            <div class="container container--narrow">
+                                <ul class="breadcrumb">
+                                    <li><a href="#"><i class="fas fa-home"></i> <span
+                                                class="screen-reader-text">Home</span></a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Portugal</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article__body container container--narrow">
+                            <h1 class="article__title">Oceanic Rage</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra tellus
+                                in hac. Dictum non consectetur a erat nam at lectus. Sed vulputate mi sit amet mauris.
+                                Scelerisque varius morbi enim nunc. Amet mattis vulputate enim nulla aliquet. Eros in
+                                cursus turpis massa tincidunt dui ut ornare. Adipiscing at in tellus integer feugiat.
+                                Amet aliquam id diam maecenas ultricies mi eget. Tellus elementum sagittis vitae et leo
+                                duis. Nisl nunc mi ipsum faucibus vitae aliquet. A lacus vestibulum sed arcu. Purus
+                                viverra accumsan in nisl nisi. Auctor urna nunc id cursus. Mauris rhoncus aenean vel
+                                elit scelerisque mauris pellentesque pulvinar pellentesque. Dolor sit amet consectetur
+                                adipiscing.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra tellus
+                                in hac. Dictum non consectetur a erat nam at lectus. Sed vulputate mi sit amet mauris.
+                                Scelerisque varius morbi enim nunc. Amet mattis vulputate enim nulla aliquet. Eros in
+                                cursus turpis massa tincidunt dui ut ornare. Adipiscing at in tellus integer feugiat.
+                                Amet aliquam id diam maecenas ultricies mi eget. Tellus elementum sagittis vitae et leo
+                                duis. Nisl nunc mi ipsum faucibus vitae aliquet. A lacus vestibulum sed arcu. Purus
+                                viverra accumsan in nisl nisi. Auctor urna nunc id cursus. Mauris rhoncus aenean vel
+                                elit scelerisque mauris pellentesque pulvinar pellentesque. Dolor sit amet consectetur
+                                adipiscing.</p>
+                                <h2>Technical Info</h2>
+                                <p>For this photo I used a 10 stop ND filter from NiSi to extend my shutter speed to 1 minute and 34 seconds.
+                                    To get everything tack sharp front to back I focused on three diferent points. As the wind was picking a bit
+                                    I did a high ISO exposure to freeze the flowers. Finally I did a quick exposure of 1/2s to get motion in the waterfall.
+                                </p>
+                        </div>
+                        <div class="article__foot container container--narrow"></div>
+                    </article>
+                    <div class="container">
+                        <div class="list-articles">
+                            <h1 class="list-articles__title">More From <a href="#">Portugal</a></h1>
+                            <ul class="list-articles__list list-articles__list--portfolio">
+                                <li>
+                                    <article class="teaser teaser--portfolio teaser--portfolio--3x2">
+                                        <figure class="teaser__figure">
+                                            <a href="single-portfolio.html"><img class="teaser__img"
+                                                    src="img/portfolio/img-4-3x2.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="teaser__text-details">
+                                            <h1 class="teaser__title"><a href="single-portfolio.html">Purifying my
+                                                    soul</a></h1>
+                                        </div>
+                                    </article>
+                                    <article class="teaser teaser--portfolio teaser--portfolio--2x3">
+                                        <figure class="teaser__figure">
+                                            <a href="single-portfolio.html"><img class="teaser__img"
+                                                    src="img/portfolio/img-7-2x3.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="teaser__text-details">
+                                            <h1 class="teaser__title"><a href="single-portfolio.html">Oceanic Rage</a></h1>
+                                        </div>
+                                    </article>
+                                    <article class="teaser teaser--portfolio teaser--portfolio--3x2">
+                                        <figure class="teaser__figure">
+                                            <a href="single-portfolio.html"><img class="teaser__img"
+                                                    src="img/portfolio/img-5-3x2.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="teaser__text-details">
+                                            <h1 class="teaser__title"><a href="single-portfolio.html">A cold wind of
+                                                    change</a></h1>
+                                        </div>
+                                    </article>
+                                    <article class="teaser teaser--portfolio teaser--portfolio--2x3">
+                                        <figure class="teaser__figure">
+                                            <a href="single-portfolio.html"><img class="teaser__img"
+                                                    src="img/portfolio/img-6-2x3.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="teaser__text-details">
+                                            <h1 class="teaser__title"><a href="single-portfolio.html">Till the end</a></h1>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page__foot">
+            <div class="container">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--whatsapp"><i class="fab fa-whatsapp"></i> <span
+                                class="screen-reader-text">Share on Whatsapp</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--facebook"><i class="fab fa-facebook-f"></i> <span
+                                class="screen-reader-text">Share on Facebook</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--twitter"><i class="fab fa-twitter"></i> <span
+                                class="screen-reader-text">Share on Twitter</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--email"><i class="fas fa-envelope"></i> <span
+                                class="screen-reader-text">Share by Email</span></a>
+                    </li>
+                </ul>
+                <p>&copy; 2020 Eduardo Domingos. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <div class="page__offcanvas">
+            <div class="container">
+                <div class="theme-toggle">
+                    <i class="theme-toggle__icon fas fa-sun"></i>
+                    <button class="theme-toggle__button">
+                        <div>
+                            <span class="theme-toggle__switch"></span>
+                        </div>
+                    </button>
+                    <i class="theme-toggle__icon fas fa-moon"></i>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="category-portfolio.html">Portfolio</a>
+                            <ul>
+                                <li><a href="portfolio-single.html">Portugal</a></li>
+                                <li><a href="portfolio-single.html">Spain</a></li>
+                                <li><a href="portfolio-single.html">USA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,43 @@
 .article {
-    &__head {}
-    &__body {}
+    $self: &;
+    &__featured-img {}
+    &__head {
+        > *:not(:last-child) {
+            margin-bottom: $spacing-unit;
+        }
+        margin-bottom: $spacing-unit;
+    }
+    &__body {
+        > *:not(:last-child) {
+            margin-bottom: $spacing-unit;
+        }
+    }
     &__foot {}
-    &__title {}
     &__meta {}
     &__share {}
+
+
+    &--portfolio {
+        #{ $self }__featured-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lighten($cod-gray, 5%);
+            @include mq($from: tablet) {
+                padding: $spacing-unit;
+            }
+            &__img {
+                &--landscape {
+                    width: 100%;
+                    max-width: $container-width--narrow;
+                }
+                &--portrait {
+                    max-height: $portfolio-portrait-max-height;
+                }
+            }
+        }
+        .page__body__content & {
+            margin-bottom: $spacing-unit--huge;
+        }
+    }
 }

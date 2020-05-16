@@ -11,7 +11,7 @@
 
 <body class="page theme">
     <script type="text/javascript">
-        if(localStorage.getItem('theme')) {
+        if (localStorage.getItem('theme')) {
             document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
         }
         else {
@@ -33,7 +33,7 @@
                         <ul>
                             <li class="active"><a href="index.html">Home</a></li>
                             <li class="menu-item-has-children">
-                                <a href="portfolio.html">Portfolio</a>
+                                <a href="category-portfolio.html">Portfolio</a>
                                 <ul>
                                     <li><a href="portfolio-single.html">Portugal</a></li>
                                     <li><a href="portfolio-single.html">Spain</a></li>
@@ -62,11 +62,11 @@
             </div>
         </header>
         <div class="page__body">
-            <div class="page__featured-img">
-                <figure>
-                    <img class="page__featured-image__img" src="img/page-featured-img.jpg" alt="">
-                </figure>
-            </div>
+
+            <figure class="page__featured-img">
+                <img class="page__featured-img__img" src="img/page-featured-img.jpg" alt="">
+            </figure>
+
             <div class="page__body__content">
                 <div class="page__body__main-content container">
                     <div class="list-articles">
@@ -75,18 +75,22 @@
                             <li>
                                 <article class="teaser teaser--portfolio teaser--portfolio--3x2">
                                     <figure class="teaser__figure">
-                                        <a href="single-portfolio.html"><img class="teaser__img" src="img/portfolio/img-4-3x2.jpg" alt=""></a>
+                                        <a href="single-portfolio.html"><img class="teaser__img"
+                                                src="img/portfolio/img-4-3x2.jpg" alt=""></a>
                                     </figure>
                                     <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="single-portfolio.html">Purifying my soul</a></h1>
+                                        <h1 class="teaser__title"><a href="single-portfolio.html">Purifying my soul</a>
+                                        </h1>
                                     </div>
                                 </article>
                                 <article class="teaser teaser--portfolio teaser--portfolio--3x2">
                                     <figure class="teaser__figure">
-                                        <a href="single-portfolio.html"><img class="teaser__img" src="img/portfolio/img-5-3x2.jpg" alt=""></a>
+                                        <a href="single-portfolio.html"><img class="teaser__img"
+                                                src="img/portfolio/img-5-3x2.jpg" alt=""></a>
                                     </figure>
                                     <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="single-portfolio.html">A cold wind of change</a></h1>
+                                        <h1 class="teaser__title"><a href="single-portfolio.html">A cold wind of
+                                                change</a></h1>
                                     </div>
                                 </article>
                             </li>
@@ -98,33 +102,48 @@
                             <li>
                                 <article class="teaser">
                                     <figure class="teaser__figure">
-                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg" alt=""></a>
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg"
+                                                alt=""></a>
                                     </figure>
                                     <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a></h1>
-                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est animi temporibus quibusdam facilis dolores eum, error, consectetur maiores repellendus mollitia in tenetur?</p>
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est
+                                            animi temporibus quibusdam facilis dolores eum, error, consectetur maiores
+                                            repellendus mollitia in tenetur?</p>
                                     </div>
                                 </article>
                             </li>
                             <li>
                                 <article class="teaser">
                                     <figure class="teaser__figure">
-                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg" alt=""></a>
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg"
+                                                alt=""></a>
                                     </figure>
                                     <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a></h1>
-                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est animi temporibus quibusdam facilis dolores eum, error, consectetur maiores repellendus mollitia in tenetur?</p>
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est
+                                            animi temporibus quibusdam facilis dolores eum, error, consectetur maiores
+                                            repellendus mollitia in tenetur?</p>
                                     </div>
                                 </article>
                             </li>
                             <li>
                                 <article class="teaser">
                                     <figure class="teaser__figure">
-                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg" alt=""></a>
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg"
+                                                alt=""></a>
                                     </figure>
                                     <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a></h1>
-                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est animi temporibus quibusdam facilis dolores eum, error, consectetur maiores repellendus mollitia in tenetur?</p>
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est
+                                            animi temporibus quibusdam facilis dolores eum, error, consectetur maiores
+                                            repellendus mollitia in tenetur?</p>
                                     </div>
                                 </article>
                             </li>
@@ -136,7 +155,7 @@
         <footer class="page__foot">
             <div class="container">
                 <ul class="socials">
-                    <li class="socials__item" >
+                    <li class="socials__item">
                         <a href="" class="socials__link socials__link--whatsapp"><i class="fab fa-whatsapp"></i> <span
                                 class="screen-reader-text">Share on Whatsapp</span></a>
                     </li>
@@ -170,8 +189,8 @@
                 <nav class="main-nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li>
-                            <a href="portfolio.html">Portfolio</a>
+                        <li class="menu-item-has-children">
+                            <a href="category-portfolio.html">Portfolio</a>
                             <ul>
                                 <li><a href="portfolio-single.html">Portugal</a></li>
                                 <li><a href="portfolio-single.html">Spain</a></li>

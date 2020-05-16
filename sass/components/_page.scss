@@ -42,7 +42,6 @@
         }
     }
     &__body {
-        padding-top: $spacing-unit;
         margin-bottom: $spacing-unit--large;
         &__content {
             display: grid;
@@ -55,7 +54,6 @@
         }
     }
     &__featured-img {
-        margin-top: -$spacing-unit;
         margin-bottom: $spacing-unit;
         @include mq($from: tablet) {
             margin-bottom: $spacing-unit--large;

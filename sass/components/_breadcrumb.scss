@@ -1,1 +1,10 @@
-.breadcrumb {}
+.breadcrumb {
+    display: flex;
+    font-size: rem(13px);
+    opacity: .75;
+    > li + li {
+        &:before {
+            content: "\00a0/\00a0";
+        }
+    }
+}
