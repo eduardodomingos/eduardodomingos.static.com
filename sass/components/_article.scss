@@ -10,6 +10,16 @@
         > *:not(:last-child) {
             margin-bottom: $spacing-unit;
         }
+        .article__category {
+            margin-bottom: $spacing-unit--tiny;
+        }
+        .article__title {
+            margin-bottom: $spacing-unit--tiny;
+        }
+
+        .article__date {
+            opacity: .7;
+        }
         margin-bottom: $spacing-unit;
     }
     &__body {
@@ -17,6 +27,8 @@
             margin-bottom: $spacing-unit;
         }
     }
+
+    
     &__foot {}
     &__meta {}
     &__share {}

@@ -42,9 +42,10 @@
         }
     }
     &__body {
-        margin-bottom: $spacing-unit--large;
-        .single-post & {
-            margin-top: $spacing-unit + $spacing-unit--tiny;
+        padding: $spacing-unit--large 0;
+        .home &,
+        .single-portfolio & {
+            padding-top: 0;
         }
         &__content {
             display: grid;

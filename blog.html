@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="page theme home">
+<body class="page theme">
     <script type="text/javascript">
         if (localStorage.getItem('theme')) {
             document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
@@ -62,42 +62,10 @@
             </div>
         </header>
         <div class="page__body">
-
-            <figure class="page__featured-img">
-                <img class="page__featured-img__img" src="img/page-featured-img.jpg" alt="">
-            </figure>
-
             <div class="page__body__content">
                 <div class="page__body__main-content container">
                     <div class="list-articles">
-                        <h1 class="list-articles__title">Featured Shots</h1>
-                        <ul class="list-articles__list list-articles__list--portfolio">
-                            <li>
-                                <article class="teaser teaser--portfolio teaser--portfolio--3x2">
-                                    <figure class="teaser__figure">
-                                        <a href="portfolio-single.html"><img class="teaser__img"
-                                                src="img/portfolio/img-4-3x2.jpg" alt=""></a>
-                                    </figure>
-                                    <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="portfolio-single.html">Purifying my soul</a>
-                                        </h1>
-                                    </div>
-                                </article>
-                                <article class="teaser teaser--portfolio teaser--portfolio--3x2">
-                                    <figure class="teaser__figure">
-                                        <a href="portfolio-single.html"><img class="teaser__img"
-                                                src="img/portfolio/img-5-3x2.jpg" alt=""></a>
-                                    </figure>
-                                    <div class="teaser__text-details">
-                                        <h1 class="teaser__title"><a href="portfolio-single.html">A cold wind of
-                                                change</a></h1>
-                                    </div>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="list-articles">
-                        <h1 class="list-articles__title">Latest Articles</h1>
+                        <h1 class="list-articles__title">Blog</h1>
                         <ul class="list-articles__list">
                             <li>
                                 <article class="teaser">
@@ -198,7 +166,7 @@
                             </ul>
                         </li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="single.html">Blog</a></li>
                     </ul>
                 </nav>
             </div>
