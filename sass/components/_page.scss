@@ -43,6 +43,9 @@
     }
     &__body {
         margin-bottom: $spacing-unit--large;
+        .single-post & {
+            margin-top: $spacing-unit + $spacing-unit--tiny;
+        }
         &__content {
             display: grid;
             > * > *:not(:last-child) {
@@ -51,8 +54,14 @@
                     margin-bottom: $spacing-unit--large;
                 }
             }
+            .single-post & {
+                @include mq($from: tablet) {
+                    grid-template-columns: 2fr 1fr;
+                }
+            }
         }
     }
+
     &__featured-img {
         margin-bottom: $spacing-unit;
         @include mq($from: tablet) {

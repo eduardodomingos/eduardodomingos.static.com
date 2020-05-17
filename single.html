@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="page theme single-portfolio">
+<body class="page theme single-post">
     <script type="text/javascript">
         if (localStorage.getItem('theme')) {
             document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
@@ -40,7 +40,7 @@
                                     <li><a href="portfolio-single.html">USA</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="single.html">About</a></li>
                             <li><a href="single.html">Blog</a></li>
                         </ul>
                     </nav>
@@ -62,23 +62,15 @@
             </div>
         </header>
         <div class="page__body">
-            <div class="page__body__content">
+            <div class="page__body__content container">
                 <div class="page__body__main-content">
-                    <article class="article article--portfolio">
+                    <article class="article">
                         <div class="article__head">
                             <figure class="article__featured-img">
-                                <img class="article__featured-img__img article__featured-img__img--landscape" src="img/portfolio/featured-img-l.jpg" alt="">
+                                <img class="article__featured-img__img" src="img/blog/post-2.jpg" alt="">
                             </figure>
-                            <div class="container container--narrow">
-                                <ul class="breadcrumb">
-                                    <li><a href="#"><i class="fas fa-home"></i> <span
-                                                class="screen-reader-text">Home</span></a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Portugal</a></li>
-                                </ul>
-                            </div>
                         </div>
-                        <div class="article__body container container--narrow">
+                        <div class="article__body">
                             <h1 class="article__title">Oceanic Rage</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra tellus
@@ -106,47 +98,59 @@
                                     I did a high ISO exposure to freeze the flowers. Finally I did a quick exposure of 1/2s to get motion in the waterfall.
                                 </p>
                         </div>
-                        <div class="article__foot container container--narrow"></div>
+                        <div class="article__foot"></div>
                     </article>
-                    <div class="container">
-                        <div class="list-articles">
-                            <h1 class="list-articles__title">More From <a href="#">Portugal</a></h1>
-                            <ul class="list-articles__list list-articles__list--portfolio">
-                                <li>
-                                    <article class="teaser teaser--portfolio teaser--portfolio--3x2">
-                                        <figure class="teaser__figure">
-                                            <a href="portfolio-single.html"><img class="teaser__img"
-                                                    src="img/portfolio/img-4-3x2.jpg" alt=""></a>
-                                        </figure>
-                                        <div class="teaser__text-details">
-                                            <h1 class="teaser__title"><a href="portfolio-single.html">Purifying my
-                                                    soul</a></h1>
-                                        </div>
-                                    </article>
-                                    <article class="teaser teaser--portfolio teaser--portfolio--3x2">
-                                        <figure class="teaser__figure">
-                                            <a href="portfolio-single.html"><img class="teaser__img"
-                                                    src="img/portfolio/img-5-3x2.jpg" alt=""></a>
-                                        </figure>
-                                        <div class="teaser__text-details">
-                                            <h1 class="teaser__title"><a href="portfolio-single.html">A cold wind of
-                                                    change</a></h1>
-                                        </div>
-                                    </article>
-                                    <article class="teaser teaser--portfolio teaser--portfolio--2x3">
-                                        <figure class="teaser__figure">
-                                            <a href="portfolio-single.html"><img class="teaser__img"
-                                                    src="img/portfolio/img-6-2x3.jpg" alt=""></a>
-                                        </figure>
-                                        <div class="teaser__text-details">
-                                            <h1 class="teaser__title"><a href="portfolio-single.html">Till the end</a></h1>
-                                        </div>
-                                    </article>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="list-articles">
+                        <h1 class="list-articles__title">You may also like</h1>
+                        <ul class="list-articles__list">
+                            <li>
+                                <article class="teaser">
+                                    <figure class="teaser__figure">
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-1.jpg"
+                                                alt=""></a>
+                                    </figure>
+                                    <div class="teaser__text-details">
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est
+                                            animi temporibus quibusdam.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="teaser">
+                                    <figure class="teaser__figure">
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-2.jpg"
+                                                alt=""></a>
+                                    </figure>
+                                    <div class="teaser__text-details">
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="teaser">
+                                    <figure class="teaser__figure">
+                                        <a href="single.html"><img class="teaser__img" src="img/blog/post-3.jpg"
+                                                alt=""></a>
+                                    </figure>
+                                    <div class="teaser__text-details">
+                                        <h1 class="teaser__title"><a href="single.html">Iceland never disappoints</a>
+                                        </h1>
+                                        <p class="teaser__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Quisquam hic inventore ullam consequuntur omnis pariatur quas, est
+                                            animi temporibus.</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <aside class="page__body__sidebar"></aside>
             </div>
         </div>
         <footer class="page__foot">
