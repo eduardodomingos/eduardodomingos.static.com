@@ -1,6 +1,11 @@
 .article {
     $self: &;
-    &__featured-img {}
+    &__featured-img {
+        cursor: zoom-in;
+        &.fullscreen {
+            cursor: zoom-out;
+        }
+    }
     &__head {
         > *:not(:last-child) {
             margin-bottom: $spacing-unit;
@@ -26,6 +31,25 @@
             @include mq($from: tablet) {
                 padding: $spacing-unit;
             }
+            &.fullscreen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                z-index: 9999999;
+                img {
+                    animation-name: fadeIn;
+                    animation-duration: 1s;
+                    &.article__featured-img__img--landscape {
+                        max-width: 80vw;
+                    }
+                    &.article__featured-img__img--portrait {
+                        max-height: 80vh;
+                    }
+                }
+            }
+
             &__img {
                 &--landscape {
                     width: 100%;

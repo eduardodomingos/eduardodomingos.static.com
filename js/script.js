@@ -32,6 +32,12 @@
                 }
             });
 
+            if(dom.$body.hasClass('single-portfolio')) {
+                $('.article__featured-img').click(function() {
+                    $(this).toggleClass('fullscreen');
+                })
+            }
+
             // Window Events
             dom.$window.scroll(function () {
                 // On Scroll:

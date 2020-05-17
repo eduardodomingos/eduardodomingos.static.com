@@ -51,9 +51,9 @@ h6 {
 # Links, Buttons and Form Inputs
 --------------------------------------------------------------*/
 a {
-    transition: opacity 0.2s linear;
+    transition: opacity .2s linear;
     @include attention() {
-        opacity: 0.8;
+        opacity: .8;
     }
 }
 
@@ -69,8 +69,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+    transition: opacity .2s linear;
     @include attention() {
         outline: 0;
+        opacity: .8;
     }
 }
 

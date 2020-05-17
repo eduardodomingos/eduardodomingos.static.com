@@ -1,9 +1,9 @@
 // Hamburger
 // ==================================================
 .hamburger {
-    padding: $hamburger-padding-y $hamburger-padding-x;
     display: inline-block;
     cursor: pointer;
+    @include square($spacing-unit--large);
 
     transition-property: opacity;
     transition-duration: 0.15s;
