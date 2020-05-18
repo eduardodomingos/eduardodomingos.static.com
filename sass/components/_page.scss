@@ -63,6 +63,10 @@
         }
     }
 
+    &__title {
+        @extend %title-text;
+    }
+
     &__featured-img {
         margin-bottom: $spacing-unit;
         @include mq($from: tablet) {

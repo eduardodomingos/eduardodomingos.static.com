@@ -26,6 +26,11 @@
         > *:not(:last-child) {
             margin-bottom: $spacing-unit;
         }
+        a {
+            @include themed() {
+                color: t($links);
+            }
+        }
     }
 
     
@@ -74,6 +79,16 @@
         }
         .page__body__content & {
             margin-bottom: $spacing-unit--huge;
+        }
+    }
+
+    &--about {
+        .article__body {
+            display: grid;
+            grid-gap: $spacing-unit;
+            @include mq($from: tablet) {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     }
 }

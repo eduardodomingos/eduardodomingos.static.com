@@ -4,6 +4,7 @@ $text: "text";
 $border: "border";
 $bg-page-foot: "bg-page-foot";
 $bg-submenu: "bg-submenu";
+$links: "links";
 
 // Themes
 $themes: (
@@ -12,13 +13,15 @@ $themes: (
         text: $cod-gray,
         border: rgba($cod-gray, .1),
         bg-page-foot: lighten($cod-gray, 5%),
-        bg-submenu: $desert-storm
+        bg-submenu: $desert-storm,
+        links: $san-marino
     ),
     dark: (
         bg: $cod-gray,
         text: $desert-storm,
         border: rgba($desert-storm, .4),
         bg-page-foot: darken($cod-gray, 5%),
-        bg-submenu: darken($cod-gray, 10%)
+        bg-submenu: darken($cod-gray, 10%),
+        links: lighten($san-marino, 10%)
     ),
 );

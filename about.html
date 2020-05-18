@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page theme">
+    <script type="text/javascript">
+        if (localStorage.getItem('theme')) {
+            document.body.classList.add(JSON.parse(localStorage.getItem('theme')).mode);
+        }
+        else {
+            document.body.classList.add('theme--light')
+        }
+    </script>
+    <div class="page__wrapper">
+        <header class="page__head">
+            <div class="announcement">
+                <a href="#" class="announcement__text">FREE eBook available!!!</a>
+            </div>
+            <div class="container">
+                <div class="branding">
+                    <h1 class="branding__logo"><a href="/">Eduardo <span>Domingos</span></a></h1>
+                    <p class="branding__text">Landscape Photography</p>
+                </div>
+                <div class="page__head__right">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="category-portfolio.html">Portfolio</a>
+                                <ul>
+                                    <li><a href="portfolio-single.html">Portugal</a></li>
+                                    <li><a href="portfolio-single.html">Spain</a></li>
+                                    <li><a href="portfolio-single.html">USA</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="active"><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="theme-toggle">
+                        <i class="theme-toggle__icon fas fa-sun"></i>
+                        <button class="theme-toggle__button">
+                            <div>
+                                <span class="theme-toggle__switch"></span>
+                            </div>
+                        </button>
+                        <i class="theme-toggle__icon fas fa-moon"></i>
+                    </div>
+                    <button class="hamburger hamburger--spin-r" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="page__body">
+            <div class="container container--narrow">
+                <h1 class="page__title">About and Contact</h1>
+
+                <div class="page__body__content">
+                    <div class="page__body__main-content">
+
+                        <article class="article article--about">
+                            <div class="article__head">
+                                <h1>I’m a big picture thinker but I’m never afraid to get my hands dirty.</h1>
+                            </div>
+                            <div class="article__body">
+                                <div>
+                                    <figure class="article__featured-img">
+                                        <img class="article__featured-img__img" src="img/about.jpg" alt="">
+                                    </figure>
+                                </div>
+                                <div>
+                                    <p>I love seeing projects through from research (to ideation to design to more research) to launch.</p>
+                                    <p>I’ve found that I can make a big impact when I serve as translator between engineers and product folks. I like writing pixel-perfect css and asking dumb questions that people are afraid to ask.</p>
+                                    <p>I like playing games, and thinking about ways that game-based patterns can delight people and motivate them to change their behavior.</p>
+                                    <p>I used to be afraid of UX research, until I realized that research is really just asking questions and then being strategic about the methods you use to get answers. I’m obsessed with data, but I try not to let that suck the humanity out of everything.</p>
+                                    <p><a href="mailto:epcdomingos@gmail.com">shoot me and email at epcdomingos@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="article__foot"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page__foot">
+            <div class="container">
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--whatsapp"><i class="fab fa-whatsapp"></i> <span
+                                class="screen-reader-text">Share on Whatsapp</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--facebook"><i class="fab fa-facebook-f"></i> <span
+                                class="screen-reader-text">Share on Facebook</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--twitter"><i class="fab fa-twitter"></i> <span
+                                class="screen-reader-text">Share on Twitter</span></a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="" class="socials__link socials__link--email"><i class="fas fa-envelope"></i> <span
+                                class="screen-reader-text">Share by Email</span></a>
+                    </li>
+                </ul>
+                <p>&copy; 2020 Eduardo Domingos. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <div class="page__offcanvas">
+            <div class="container">
+                <div class="theme-toggle">
+                    <i class="theme-toggle__icon fas fa-sun"></i>
+                    <button class="theme-toggle__button">
+                        <div>
+                            <span class="theme-toggle__switch"></span>
+                        </div>
+                    </button>
+                    <i class="theme-toggle__icon fas fa-moon"></i>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="category-portfolio.html">Portfolio</a>
+                            <ul>
+                                <li><a href="portfolio-single.html">Portugal</a></li>
+                                <li><a href="portfolio-single.html">Spain</a></li>
+                                <li><a href="portfolio-single.html">USA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
